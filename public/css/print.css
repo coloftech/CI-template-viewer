@@ -1,0 +1,71 @@
+@media print {
+
+    title,
+    .print-content,
+    .print-header
+    {display:block;}
+    .side-body,
+    .container-fluid,
+    .create{
+    	margin: 0;
+      padding: 0
+    }
+    .print{
+
+      text-align: left;
+      display: block;
+      position: absolute;
+      margin-left: 150px;
+      margin-right: auto;
+      left: 0;
+      right: 0;
+      top: 10px;
+    }
+    .print-title{
+      top: 15px;
+      font-size: 20px;
+      font-weight: bold;
+    }
+    .print-title2{
+      top: 40px;
+    }
+    .print-date{
+      top: 60px;
+    }
+    .charts .tab-heading,
+    .charts select,
+    .charts .btn {
+      display: none;
+    }
+
+    .charts .output{
+      display: block;
+    }
+    .side-menu{margin: 0;padding: 0}
+  .no-print,
+  .header-top,
+  .header,
+  .slider-show,
+  .post-sidebar,
+  .post-sidebar > .item,
+  .footer,
+  footer,
+  #about,
+  #contact,
+  #mostviews,
+  div > a > img
+  {margin: 0;
+  	padding: 0;
+  	display: none;}
+
+
+  html, body {
+    width: 210mm;
+    height: 297mm;
+  }
+}
+
+@page {
+  size: A4 landscape;
+  margin: 20px;
+}
